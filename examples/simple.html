@@ -1,0 +1,110 @@
+<html>
+
+  <head>
+    <script type="text/javascript" src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="../lib/sammy.js"></script>
+    <script type="text/javascript" src="../lib/jquery.showroom.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+          $('#showroom').showroom({
+player:           $('#player'),
+gridViewButton:   $('#grid_view_button'),
+playerViewButton: $('#player_view_button')
+});
+          });
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+
+        <style>
+          body {
+            background-color: #333;
+            color: #eee;
+            font-family: Helvetica, Verdana, Sans-serif;
+          }
+
+          #container {
+            margin: 0 auto;
+            width: 600px;
+          }
+
+          a {
+            color: #aaa;
+          }
+
+          h1, h2 {
+            font-weight: normal;
+          }
+
+          h1 {
+            font-size: 2.0em;
+          }
+
+          h2 {
+            padding-bottom: 1em;
+          }
+
+          .grid li {
+            display: inline;
+            list-style-type: none;
+          }
+
+          #controls li {
+          display: inline; 
+          list-style-type: none;
+          color: #aaa;
+          text-decoration: underline;
+          cursor: pointer;
+          }
+
+          #player {
+          width: 400px;
+          height: 300px;
+          float: left;
+          background-color: #000;
+          }
+
+          #player img {
+            width: 400px;
+            height: 300px;
+          }
+
+          #showroom.player {
+          float: left;
+          width: 200px;
+          }
+        </style>
+      </head>
+
+      <body>
+
+        <div id="container">
+
+          <h1>Showroom</h1>
+          <h2>An anything modal gallery.</h2>
+
+          <ul id="controls">
+            <li id="grid_view_button"><a href="#/grid">Grid</a></li>
+            <li id="player_view_button"><a href="#/player">Player</a></li>
+          </ul>
+
+          <div id="player"></div>
+
+          <ul id="showroom">
+            <li><a href="images/1/original.jpg"><img src="images/1/thumb.jpg"/></a></li>
+            <li><a href="images/2/original.jpg"><img src="images/2/thumb.jpg"/></a></li>
+            <li><a href="images/3/original.jpg"><img src="images/3/thumb.jpg"/></a></li>
+            <li><a href="images/4/original.jpg"><img src="images/4/thumb.jpg"/></a></li>
+            <li><a href="images/5/original.jpg"><img src="images/5/thumb.jpg"/></a></li>
+            <li><a href="images/6/original.jpg"><img src="images/6/thumb.jpg"/></a></li>
+            <li><a href="images/7/original.jpg"><img src="images/7/thumb.jpg"/></a></li>
+            <li><a href="images/8/original.jpg"><img src="images/8/thumb.jpg"/></a></li>
+            <li><a href="images/9/original.jpg"><img src="images/9/thumb.jpg"/></a></li>
+          </ul>
+
+        </div>
+
+      </body>
+
+    </html>
